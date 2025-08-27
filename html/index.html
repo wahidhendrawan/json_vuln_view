@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Executive Vulnerability Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1>Executive Vulnerability Report</h1>
+  <div class="controls">
+    <input type="file" id="fileInput" accept=".json">
+    <button onclick="exportPDF()">Download PDF</button>
+    <button onclick="clearReport()">Clear Report</button>
+  </div>
+  <div id="dashboard" class="dashboard"></div>
+  <canvas id="severityChart" class="chart"></canvas>
+  <div id="scan-summary" class="card summary"></div>
+  <div id="vulnerabilities"></div>
+  <script>
+    // JS code sudah dibahas di chat, masukkan sesuai versi terakhir
+    console.log("Implementasi JS lengkap sesuai script final di chat.");
+  </script>
+</body>
+</html>
