@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  vulnviewer:
+    image: nginx:alpine
+    container_name: vuln-report-viewer
+    ports:
+      - "8092:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
